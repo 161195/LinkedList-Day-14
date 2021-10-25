@@ -7,9 +7,9 @@ namespace Day14_LinkedList
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();      //creating object of linklist class
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
+            list.AddLast(56);
+            list.AddLast(30);
+            list.AddLast(70);
             list.Display();
             Console.ReadLine();
 

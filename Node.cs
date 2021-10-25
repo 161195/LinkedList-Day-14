@@ -8,7 +8,7 @@ namespace Day14_LinkedList
 {
     public class Node
     {
-        public int data;  //store element
+        public int data;        //declared the integer type data variable
         public Node next;
         public Node(int data)  //constructor
         {
