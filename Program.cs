@@ -7,9 +7,10 @@ namespace Day14_LinkedList
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();      //creating object of linklist class
-            list.Insert(56);     
+            list.Insert(56);
+            list.Insert(30);
             list.Insert(70);
-            list.insertAfter(list.head.next, 30);
+            list.RemoveFirst();
             list.Display();
             Console.ReadLine();
 
