@@ -10,7 +10,7 @@ namespace Day14_LinkedList
             list.Insert(56);
             list.Insert(30);
             list.Insert(70);
-            list.RemoveFirst();
+            list.RemoveLast();
             list.Display();
             Console.ReadLine();
 
