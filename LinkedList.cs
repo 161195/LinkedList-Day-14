@@ -28,20 +28,18 @@ namespace Day14_LinkedList
             }
             Console.WriteLine("\n {0} data is insterted into linked list", newNode.data);
         }
-        internal Node Search(int data)     //removing last data from linked list
+        internal void InsertAfter(Node prevNode,int data)     //insert between two or more nodes
         {
-            
-            
-            while(this.head!= null)
-            {
-                if (this.head.data == data)
+            Console.WriteLine("\n AfterInsert element is :");
+            prevNode = this.head;        
+                if (prevNode.next.next == null)
                 {
-                    return this.head; 
+                Console.WriteLine("\n previous node is null");
+                return;
                 }
-                this.head = this.head.next;
-            }
-            return null;
-
+            Node Newnode1 = new Node(data);          
+            Newnode1.next = prevNode.next.next;
+            prevNode.next.next = Newnode1;        //prevNode of next is new node
         }
         internal void Display()                    //display the linklist data
         {
